@@ -1,8 +1,4 @@
 class UsersController < ApplicationController
-  before_action :require_user_logged_in, only: [:index]
-  def index
-    @users = Task.all
-  end
 
   def new
     @user = User.new
